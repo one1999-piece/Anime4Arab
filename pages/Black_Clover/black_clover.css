@@ -1,0 +1,191 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
+
+  body{
+    background: #0c2036;
+  }
+
+.nav-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background: #01152a;
+    height: 60px;
+}
+
+.nav-1 .logo h2{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-1 .back-home a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-1 .back-home a:hover{
+    color: #333;
+    background: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.description{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.description .img img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+    border-radius: 15px;
+    margin: 0 20px;
+}
+
+.description .text h2{
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.description .text .esd{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.anime_description{
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 30px;
+    margin-top: 2rem;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem; 
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+.buttons button{
+    width: 30rem;
+    height: 5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 20px;
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    background: #01152a;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+
+.buttons button:hover{
+    background: transparent ;
+    border: #01152a 5px solid;
+}
+
+
+
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+.footer p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 20px;
+}
+
+.footer p .designer{
+    margin: 20px 20px;
+    display: table-column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 20px;
+    transition: all 0.3s ease;
+}
+
+.footer a:hover{
+    color: #333;
+    background: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
