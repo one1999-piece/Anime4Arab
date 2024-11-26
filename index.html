@@ -19,7 +19,8 @@
     <div class="links">
         <a href="index.html">Anime</a>
         <a href="https://www.linkbox.to/a/s/l1EkjlU?pid=614434">Movies</a>
-        <a href="pages/contact_me.html">Contact Us</a>                                  
+        <a href="pages/contact_me.html">Contact Us</a>
+        <a href="Admin's Dashboard/Log In.html">Dashboard</a>  
     </div>
   </nav>
           
@@ -144,6 +145,29 @@
 
 
   </div>    <!--*cards-->
+  <script>
+    // تحميل الكروت المخزنة من localStorage
+    window.onload = function() {
+      const cards = JSON.parse(localStorage.getItem("cards")) || [];
+      
+      const cardList = document.getElementById('cardList');
+      
+      // إضافة كل كارد إلى الـ cardList في الصفحة
+      cards.forEach(card => {
+        const cardHTML = `
+          <div class="card">
+            <img src="${card.imageUrl}" alt="${card.title}">
+            <div class="card-content">
+              <h3>${card.title}</h3>
+              <p>Anime<sup>4</sup>Arab</p>
+              <a href="${card.link}"><button>Watch The Anime</button></a>
+            </div>
+          </div>
+        `;
+        cardList.insertAdjacentHTML('beforeend', cardHTML);
+      });
+    };
+  </script>
   
   <footer>
     <div class="footer">
