@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+</head>
+<body>
+    <form id="loginForm">
+        <p class="p">Username: </p>
+        <input class="items" type="text" id="username" name="username" placeholder="Username">
+        <br>
+        <p class="p">Password: </p>
+        <input class="items" type="password" id="password" name="password" placeholder="Password">
+        <br>
+        <button class="items" id="btn" type="button" onclick="login()">Login</button>
+    </form>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #333;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        #loginForm{
+            background-color: #555;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            height: 40%;
+            width: 50%;
+        }
+
+        .items{
+            display: block;
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 100%;
+        }
+
+        #btn{
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            height: 3rem;
+        }
+
+        #btn:hover{
+            background-color: #0056b3;
+        }
+
+        .p{
+            margin-bottom: 5px;
+        }
+
+    </style>
+
+
+    <script>
+        function login() {
+            // قيم المستخدم المخزنة (قم بتغييرها إلى قيمك الفعلية)
+            const username = "admin";
+            const password = "password";
+
+            // الحصول على قيم الإدخال
+            const enteredUsername = document.getElementById("username").value;
+            const enteredPassword = document.getElementById("password").value;
+
+            // المقارنة
+            if (enteredUsername === username && enteredPassword === password) {
+                // تسجيل الدخول بنجاح
+                window.location.href = "Dashboard.html"; // قم بتغيير عنوان URL لصفحة التحكم
+            } else {
+                alert("Username or Password is Wrong");
+            }
+        }
+    </script>
+</body>
+</html>
