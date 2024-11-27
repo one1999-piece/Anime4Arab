@@ -21,7 +21,91 @@
     <button onclick="addCard()">Add New Card</button>
     <div id="cardList"></div>
   </div>
+  
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+      }
 
+      body {
+        background: #0c2036;
+      }
+
+      .links {
+        gap: 20px;
+      }
+
+      .links button {
+        padding: 10px 20px;
+        background-color: #0077b5;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .links button:hover {
+        background-color: #005fa3;
+      }
+
+      .dashboard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        gap: 20px;
+      }
+
+      .dashboard button {
+        padding: 10px 20px;
+        background-color: #0077b5;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+        background: #01152a;
+        height: 50px;
+      }
+
+      nav .name h2 {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      nav .links a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin: 0px 20px;
+        transition: all ease 0.3s;
+      }
+
+      nav .links #a:hover {
+        color: #333;
+        background: #fff;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin: 0 10px;
+      }  
+    </style>
     
     <script src="dashboard.js"></script>
 </body>
